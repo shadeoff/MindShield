@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <title>媒体指南</title>
+
+  <!-- Mobile Specific Metas
+================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Construction Html5 Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name=author content="Themefisher">
+  <meta name=generator content="Themefisher Constra HTML Template v1.0">
+
+  <!-- Favicon
+================================================== -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- CSS
+================================================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+  <!-- Animation -->
+  <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <!-- slick Carousel -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <!-- Colorbox -->
+  <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
+  <!-- Template styles-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="body-inner" id="researchapp">
+
+  
+  
+<!-- Header start 导航栏-->
+<header id="header" class="header-one">
+  
+  <!-- <button @click="hideinfo">test</button> -->
+  <div class="bg-white">
+    <div class="container">
+      <div class="logo-area d-">
+          <div class="row align-items-center">
+            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="index.html">
+                  <img loading="lazy" src="images/logo.png" alt="Constra">
+                </a>
+            </div><!-- logo end -->
+  
+            <div class="col-lg-6 header-center">
+                <ul class="top-info-box">
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title"><i class="fa fa-phone mr-3"></i>电话</p>
+                          <p class="info-box-subtitle">18131397887</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                          <p class="info-box-title"><i class="fa fa-at mr-3"></i>邮箱</p>
+                          <p class="info-box-subtitle">1004191112@email.cugb.edu.cn</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="last">
+                    <div class="info-box last">
+                      <div class="info-box-content">
+                          <p class="info-box-title"><i class="fa fa-envelope mr-3"></i>邮编</p>
+                          <p class="info-box-subtitle">100080</p>
+                      </div>
+                    </div>
+                  </li>
+                  
+                </ul><!-- Ul end -->              
+            </div><!-- header right end -->
+
+            <!--显示用户头像或者登录按钮 当用户没有登录时显示按钮，成功后显示头像等 -->
+            <!-- 登录 -->
+            <div class="col-lg-2 offset-lg-1 header-get-a-quote" v-if="!infoIsShow">
+              <a class="btn btn-primary" href="login.html">登录</a>
+            </div>
+
+            <!-- 头像 -->
+            <div  class="col-lg-2 offset-lg-1 btn-group" v-if="infoIsShow">
+              <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <img class="rounded-circle img-fluid" style="width: 50px; height: 50px;" src="images/author.png" alt="Header Avatar">
+                <span class="">一个人</span>
+                
+              </button>
+              
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="user-info.html"><i class="fa fa-user mr-3" style="color: #ffb600;"></i>个人中心</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" type="button" @click="logout"><i class="fa fa-door-open mr-3" style="color: #ffb600;"></i>退出</a>
+              </div>
+            </div> <!-- 头像/登录end -->
+ 
+          </div><!-- logo area end -->
+          
+      </div><!-- Row end -->
+    </div><!-- Container end -->
+  </div>
+
+  <div class="site-navigation">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+              <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                      <li class="nav-item dropdown">
+                          <a href="index.html" class="nav-link ">首页 </a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                          <a href="about.html" class="nav-link">了解网络暴力 </a>   
+                      </li>
+              
+                      <li class="nav-item dropdown">
+                          <a href="forum.html" class="nav-link " >论坛 </a>
+                      </li>
+              
+                      <li class="nav-item dropdown active">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">资源 <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="get-help.html">马上获得帮助</a></li>
+                            <li><a href="laws.html">法律和政策</a></li>
+                            <li><a href="research-resources.html">研究资源</a></li>
+                            <li><a href="media-guidelines.html">媒体指南</a></li>
+                            <li><a href="external.html">外部资源</a></li>
+                          </ul>
+                      </li>
+              
+                      <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">你并不孤单 <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="how-up-do.html">看看这些up是怎么做的</a></li>
+                            <li><a href="conversation.html">来场对话吧</a></li>
+                            <li><a href="psychology.html">来场心理spa</a></li>
+                          </ul>
+                      </li>
+              
+                      <li class="nav-item dropdown">
+                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">喝点鸡汤 <i class="fa fa-angle-down"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="listen-musics.html">听首歌吧</a></li>
+                            <li><a href="story-daily.html">每天一个小故事</a></li>
+                          </ul>
+                      </li>
+              
+                      <li class="nav-item"><a class="nav-link" href="get-help.html">马上获得帮助</a></li>
+                    </ul>
+                </div>
+              </nav>
+          </div>
+          <!--/ Col end -->
+        </div>
+        <!--/ Row end -->
+
+        <div class="nav-search">
+          <span id="search"><i class="fa fa-search"></i></span>
+        </div><!-- Search end -->
+
+        <div class="search-block" style="display: none;">
+          <label for="search-field" class="w-100 mb-0">
+            <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
+          </label>
+          <span class="search-close">&times;</span>
+        </div><!-- Site search end -->
+    </div>
+    <!--/ Container end -->
+
+  </div>
+  <!--/ Navigation end -->
+</header>
+<!--/ Header end -->
+
+<div class="main-area" id="mediaapp">
+    <div id="banner-area" class="banner-area" style="background-image:url(images/banner/resource3.png)">
+        <div class="banner-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="banner-heading">
+                            <h1 class="banner-title">媒体建议</h1>
+                        </div>
+                    </div><!-- Col end -->
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </div><!-- Banner text end -->
+    </div><!-- Banner area end -->
+
+    <section id="main-container" class="main-container">
+        <div class="container" id="readapp">
+            <div class="bd-nav-box">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcrumb-black">
+                        <li class="breadcrumb-item"><a href="#">首页</a></li>
+                        <li class="breadcrumb-item"><a href="#">资源</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{titles[activeButton]}}</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-3 mt-5 mt-lg-0">
+                    <div class="list-group">
+                        <a href="get-help.html" class="list-group-item list-group-item-action " :class="{active:activeButton === 0}" >{{titles[0]}}</a>
+                        <a href="laws.html" class="list-group-item list-group-item-action " :class="{active:activeButton === 1}">{{titles[1]}}</a>
+                        <a href="research-resources.html" class="list-group-item list-group-item-action "  :class="{active:activeButton === 2}">{{titles[2]}}</a>
+                        <a href="#" class="list-group-item list-group-item-action "  :class="{active:activeButton === 3}" >{{titles[3]}}</a>
+                        <a href="external.html" class="list-group-item list-group-item-action "  :class="{active:activeButton === 4}">{{titles[4]}}</a>
+                        <br>
+                    </div>
+                </div><!-- Col end -->
+
+                <!-- 什么是网暴 -->
+                <div class="col-lg-8 offset-lg-1" >
+                    <h1 class="column-title">面对网络暴力，互联网平台能做些什么？</h1>
+                    <p>知乎上有一个题为“面对网络暴力时，正确的做法是什么？”的话题讨论，该话题浏览次数高达950余万次，产生323个回答。高关注的背后不难看出，人们对于被网暴后如何自救，迫切需要一个完美答案。</p>
+                    <p>浩瀚的网络，充斥着形形色色的人，如果真的遇到了网暴，相信很多人和我一样，不知所措。作为提供服务的平台来说，能否在产品层面给予解决方案呢？</p>
+                    <p>网络暴力，按照发展阶段，可以分为事件发生前、中、后三个时期。围绕不同的阶段，我们可以采取不同的手段。</p>
+                    <p>事件发生前期更关注对用户的教育和风险预判，尽可能减少源头暴力内容的出现；事件发生中期，要为用户提供更为便捷有效的防暴功能，起到对信息的隔离和消除作用；事件发生后期，应更加重视对违规人的追责和处置机制。</p>
+
+                    <h2>1. 事件发生前：关注用户的教育和对风险内容的识别和预判</h2>
+                    <b>1）制定社区公约，明确社区规则</b>
+                    <p>B站发展到至今，已经是一个多元化的社区，营造良好且正向的社区氛围是社区建设的重点工作。B站独有的“答题转正”功能，不但可以筛选符合社区的用户，更能在此过程中，对用户进行深度教育。通过题目的设置，让用户对社区公约和规则有更深入的了解，明确哪些事情是不被允许的。</p>
+                    <p>该功能更适合于十分垂类的兴趣社区，对于泛流量的产品来说，增加“答题转正”会极大增加用户注册的流失概率。不妨可以通过做任务领积分或抽奖的方式，引导用户完成答题任务，从而达到教育用户的目的。</p>
+
+                    <b>2）设立专属账号，公示违规处置结果，震慑潜在施暴者</b>
+                    <p>公示的作用在于震慑，告知这样做的严重后果。经实际测试，每家产品都会开设类似“安全中心”“管理员”这样的专属账号，来发布违规信息的处置公告。“抖音安全中心“还打造了“梅楼封”这样的IP角色，以寓教于乐的方式解读哪些内容是不受平台允许的，还会科普防骗知识。</p>
+                    <p>科普是长期教育的过程，不可能一蹴而就。设立安全中心账号的出发点很好，落地执行时会发现，用户根本不喜欢看这样冷冰冰的公告，效果大打折扣。</p>
+                    <p>抖音安全中心“梅楼封”的IP角色，是在塑造一个人物，在你平时刷抖音时，隔三岔五就能收到他的视频，在产品使用过程中隐性科普，有血有肉，比冷冰冰的处置发布公告，更有传播力。</p>
+
+                    <b>3）机器算法，做好风险识别和预判</b>
+                    <p>针对用户已发送的不当评论，抖音上线“发文警示”功能，可对风险内容进行拦截。如果发送者坚持发送，则该条评论不会在评论区出现，仅自己可见。抖音意在从源头治理网络暴力。</p>
+                    <p>在训练机器模型的过程中，可能会存在误判，建议增加人工二次审核，在极限情况下，给用户一个申诉的出口。</p>
+
+                    <b>4）关爱负向情绪人群</b>
+                    <p>抖音在新的防网暴系统中新增了名为“心情暖宝宝”的平台助手，如果用户多次违规发布私信、评论，算法可以自动匹配触发“心情暖宝宝”，用消息对话尝试缓解用户的抑郁情绪，甚至引导用户去人工求助、线下就诊。</p>
+                    <p>2022年3月底，抖音小安推出“超能力抱抱”功能，呼吁全平台用户通过拥抱表达善意。用户只需要在想要给予关怀的视频评论区发送【抱抱】，并@抖音小安，就有可能触发超能力抱抱。据抖音透露，该功能上线一周内，累计35万视频创作者收获了来自平台用户送出的超过2000万次抱抱。</p>
+                    <p>治理网络暴力，治标更要治本。科技向善，才是产品应该追求的价值观。这不仅需要平台付出努力，更需要所有人的共同参与，用心感化心，人间真情，最暖人心。</p>
+                    <p>我们需要看到，治理网络暴力，不单单是依靠冷冰冰的规则和处理，还需要增加人文关怀。人之初，性本善，我们更应站在施暴者的角度，来听一听、想一想他们为什么会做出这样的举动。</p>
+
+                    <b>5）隐私设置，阻隔可能的网暴风险</b>
+                    <p>各大互联网平台均会在设置-隐私设置中提供基础的防暴能力，常见的是，可以通过私信、评论、关系三个维度，设置哪些人可以与你进行互动。</p>
+                    <p>小红书支持设置只有【我关注的人】，才可以评论、发送弹幕、@我。知乎配有“瓦力保镖”功能，开启后，系统会对新获得的评论进行检测，被系统识别出的不良评论将被折叠或删除。被识别为不友善的私信将会被自动隐藏，严重者将会主动帮你拉黑对方。今日头条支持作者设置评论区禁评词。</p>
+                    <p>好的功能，需要真正让用户知道，才能发挥更大的作用。经体验发现，抖音、知乎、小红书的隐私设置入口层级过深，用户需先找到设置入口，才能再进入隐私设置。豆瓣的隐私设置入口和设置是同层级的，查找起来相对容易。</p>
+
+                    <b>6）显示网络IP地址</b>
+                    <p>近期，各大互联网平台相继上线“网络用户IP地址显示功能”，境外显示国家，境内显示到省市，且功能不支持关闭。目前明确上线该功能的平台有：新浪微博、今日头条、抖音、知乎、快手、小红书、百家号。这个功能的上线，将对网络造谣等行为用户形成极大的震慑作用。深不可测的虚拟网络，终于被撕开了一个口子，让我们看到了更多真实的身份信息。</p>
+                    <p>有利也有弊，近期针对该功能，网友们众说纷纭，更多的争议在于3个方面：</p>
+                    <ol>
+                        <li>显示IP是否会泄露个人隐私？</li>
+                        <li>显示IP是否会引来间接网暴？</li>
+                        <li>显示IP就能绝对阻止被网暴吗？</li>
+                    </ol>
+                    <p>首先，不可否认的是，显示IP地址能极大震慑网暴行为，很多谣言会直接原形必露，例如：说自己是中国人，结果IP地址显示在美国。</p>
+                    <p>其次，凡事没有绝对一说，极有可能发言的人确实是中国人，只是IP地址在美国呢？会不会引发网暴从个人层面上升到国家层面呢？最后，防止网络暴力不是仅靠产品功能层面就能解决的，还需要社会治理和各方共同的努力。</p>
+
+                    <b>7）个人历史隐私保护</b>
+                    <p>网暴的核心特点是，被网暴者的个人信息会遭到曝光，在互联网上留下的历史记录会被网友扒出来。因此，在日常使用互联网络时，要养成保护个人隐私的习惯。</p>
+                    <p>在产品层面，这样的历史隐私保护措施已经是最基本的标配功能。微信朋友圈支持设置允许陌生人查看十条朋友圈、允许朋友查看朋友圈的范围提供半年、一个月、最近三天、全部等4个选项。抖音支持将账号设置为私密账号，开启后，任何人都无法查看自己的作品、点赞作品，关注账号需要经过本人批准。</p>
+
+                    <h2>2. 事件发生中：给予用户应急方案，平台应及时开展专项整顿行动</h2>
+                    <b>1）开启一键防暴功能</b>
+                    <p>若用户遭遇了网络暴力，我们应为用户提供一键开启防暴功能的能力，使用户更为快速地阻隔不良信息，减少对身心的伤害。</p>
+                    <p>微博在3月11日上线了一键开启“防暴模式”。开启该模式后，在7天内，将不接收未关注人的私信，未关注人将无法评论你的微博，未关注人转发你的微博的记录将不会展示在转发列表中。在有效期结束前12小时，微博小秘书将发送功能即将关闭的提醒，如果需要继续防护，用户在功能关闭后可手动打开。豆瓣上线了“应急防护模式”，旨在保护网络暴力的发生和传播。</p>
+
+                    <b>2）对于不良内容，系统自动提醒，引导删除或拉黑</b>
+                    <p>抖音在新推出的功能中，若系统自动识别出内容是不合适的，是不良的，会在该信息的接收者端进行提醒，引导拉黑、举报和移除粉丝。根据抖音官方的数据，该功能上线后，日均对25万次会话发出风险提示，日均近9万条消息被列入垃圾信息，日均超过7万用户受益。</p>
+
+                    <b>3）关注被施暴者心理疏导</b>
+                    <p>遭遇网络暴力，需要承担巨大的心理压力。情绪的变化是最为明显的，平台除了阻断信息骚扰和轰炸外，还要关注被施暴者的心理疏导，在核心环节进行人文关怀。</p>
+                    <p>当然，对于遭遇网络暴力，最好的方式是将通讯设备完全抛弃，及时和家人沟通，保证有人陪伴在身边，如有必要，请及时寻求心理医生的指导和帮助。</p>
+
+                    <b>4）开设举报投诉暴力行为渠道</b>
+                    <p>多数平台均会开设专门的用户投诉渠道，接收来自用户发现的网暴行为，平台根据反馈进行核实和处置。要注意的是，在设置投诉渠道时，要简化程序，便于更多用户参与其中；同时，要保护好举报者的隐私和个人信息安全。</p>
+                    <p>目前的举报只是针对某个人、某条信息，而网暴保护阀是针对群体。如果一个人向平台提出自己被网暴了，平台就应该自动查询与此人关联的信息，进行识别和处理。</p>
+                    <p>当然，这个过程中会影响很多人使用平台，某种程度可能影响平台用户和讨论的活跃度。但这种活跃度是违背道德或法律的，平台切勿唯流量论。</p>
+
+                    <b>5）平台开展专项整治行动</b>
+                    <p>出现网络暴力事件后，平台应承担起自身责任，有必要、有有义务去主动开展整治活动，及时查处、删除相关不实内容，并向公众进行公示，以免造成较大范围的谣言传播。</p>
+                    <p>当然，这种整治行动更多的是对大事件的整治，对于普通用户个体来说，他们遭遇网暴后，可能并不会引起平台的过度关注，平台需要从产品层面来考虑，如何更好地帮助这部分用户进行信息阻隔。</p>
+
+                    <b>6）提供权威最新进展和情况，引导了解事实真相</b>
+                    <p>网络暴力源自对事实的不充分了解，甚至过度或错误解读，在网暴事件发生时，平台应对相关信息快速梳理，进行权威官方解读，并不断向用户推送。信息不对称，甚至信息茧房，导致不能感同身受、不能换个角度看问题，是网暴发生的主要原因。</p>
+                    <p>目前抖音、今日头条、腾讯等平台均设有辟谣的板块和内容，但建议对相关信息进行关联，比如：当用户在平台搜索相关关键词时，能优先展示辟谣的内容或事件发生后的真实信息（经官方确认或证实），给用户尽可能全面的判断依据。也可以邀请专家或新闻从业者对事件进行解读，给出价值观判断，引导正确的讨论风向。</p>
+                    <p>对于部分有争议的内容或账号，可在账号主页明显位置增加标识，提醒用户进行甄别。</p>
+
+                    <h2>3. 事件发生后：对违规个人和账号进行处罚</h2>
+                    <b>1）相比处罚账号，更应该追求背后的责任人</b>
+                    <p>应建立更完善的用户个人信息机制，在注册时，需完成实名认证，对于实施网络暴力的个人或集体，不单封禁账号，更应该封禁其个人再使用相关产品。</p>
+                    <p>对于责任人，目前各平台都有不同梯度的处罚标准。除了短暂的封禁外，建议平台增加“价值观考核”机制，用户解封后，需完成答题，通过答题，对该部分用户进行深度教育，告知哪些内容是不被平台允许的，还可以增加强制观看网络暴力宣传片等手段（计算观看时长）。</p>
+                    <p>治暴的过程中，也需要更多的人参与进来。对于被封禁的账号，平台也可以考虑：有效举报一定数量的违规内容，且审核通过后，也可以申请解封。账号若首次被封禁，且账号历史行为较好，抖音会提供自助答题解封入口，用户完成题目作答且全部答对后即可解封。</p>
+
+                    <b>2）完善平台推荐机制和算法机制</b>
+                    <p>算法的完善和发展，让接收的信息更加符合我们的期待，提供了更美好的使用体验。有利就有弊，也正因为算法和推荐的机制，导致唯流量论盛行，助推了网络暴力危害的增强和放大。平台应该根据事件做复盘，以传播的角度，来制定更为合理的推荐机制。</p>
+                </div><!-- Col end -->
+
+            </div><!-- Content row end -->
+
+        </div><!-- Container end -->
+    </section><!-- Main container end -->
+
+
+</div>
+<!--  Main area end-->
+
+
+
+
+        <footer id="footer" class="footer bg-overlay">
+            <div class="footer-main">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-4 col-md-6 footer-widget footer-about">
+                            <h3 class="widget-title">关于我们</h3>
+                            <img loading="lazy" width="200px" class="footer-logo" src="images/footer-logo.png" alt="Constra">
+                            <div>
+                                <p>给自己时间，不要焦急，一步一步来，一日一日过，请相信生命的韧性是惊人的，跟自己向上的心去合作，不要放弃对自己的爱护。&nbsp; &nbsp; —三毛</p>
+                                <p>
+                                    不要让虚拟的恶意影响让自己对现实失望，加油！
+                                </p>
+                            </div>
+
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href="https://facebook.com/themefisher" aria-label="Facebook"><i
+                                            class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://twitter.com/themefisher" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li><a href="https://instagram.com/themefisher" aria-label="Instagram"><i
+                                            class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://github.com/themefisher" aria-label="Github"><i class="fab fa-github"></i></a></li>
+                                </ul>
+                            </div><!-- Footer social end -->
+                        </div><!-- Col end -->
+
+                        <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+                            <h3 class="widget-title">基于B/S架构的预防网络暴力线上系统</h3>
+                            <div class="working-hours">
+                                该系统功能目前仍在扩建阶段，我们力求构建一个功能完善，生态良好，能给广大被网络暴力困扰的网友心灵慰藉的线上平台，我们的工作时间
+                                <br><br> 星期一 - 星期五: <span class="text-right">09:00 - 17:00 </span>
+                                <br> 星期六: <span class="text-right">10:00 - 16:00</span>
+                                <br> 星期日及节假日: <span class="text-right">09:00 - 12:00</span>
+                            </div>
+                        </div><!-- Col end -->
+
+                        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+                            <h3 class="widget-title">你可以享受的主要功能：</h3>
+                            <ul class="list-arrow">
+                                <li><a href="about.html">了解网络暴力</a></li>
+                                <li><a href="forum.html">论坛</a></li>
+                                <li><a href="laws.html">获取对抗网络暴力的资源</a></li>
+                                <li><a href="how-up-do.html">获取经验以及教训</a></li>
+                                <li><a href="index.html">探索主页</a></li>
+                            </ul>
+                        </div><!-- Col end -->
+                    </div><!-- Row end -->
+                </div><!-- Container end -->
+            </div><!-- Footer main end -->
+
+            <div class="copyright">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 offset-lg-6">
+                            <div class="copyright-info text-right">
+              <span>原前端页面模板著作权 &copy; <script>
+                  document.write(new Date().getFullYear())
+                </script>, Designed &amp; Developed by <a href="https://themefisher.com">Themefisher</a></span>
+                            </div>
+                        </div>
+
+                    </div><!-- Row end -->
+
+                    <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+                        <button class="btn btn-primary" title="Back to Top">
+                            <i class="fa fa-angle-double-up"></i>
+                        </button>
+                    </div>
+
+                </div><!-- Container end -->
+            </div><!-- Copyright end -->
+        </footer><!-- Footer end -->
+  
+  
+    <!-- Javascript Files
+    ================================================== -->
+  
+    <!-- initialize jQuery Library -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap jQuery -->
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <!-- Slick Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/slick/slick-animation.min.js"></script>
+    <!-- Color box -->
+    <script src="plugins/colorbox/jquery.colorbox.js"></script>
+    <!-- shuffle -->
+    <script src="plugins/shuffle/shuffle.min.js" defer></script>
+
+    <!-- Template custom -->
+    <script src="js/script.js"></script>   
+    <!-- vue.js -->
+    <script src="js/vue.js"></script>
+    <!-- axios-->
+    <script src="plugins/axios/axios-0.18.0.js"></script>
+
+    <script src="js/vue/header.js"></script>
+
+
+
+    <script >
+        var app=new Vue({
+        el:"#mediaapp",
+        data(){
+            return{
+                titles:["马上获得帮助","法律和政策","研究资源","媒体指南","外部资源"],
+                activeButton:3,
+            };
+                
+            
+            
+        },
+        methods:{
+        }
+    })
+    </script>
+    
+
+    </div><!-- Body inner end -->
+    </body>
+</html>

@@ -1,0 +1,392 @@
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<!--
+THEME: Constra - Construction Html5 Template
+VERSION: 1.0.0
+AUTHOR: Themefisher
+
+HOMEPAGE: https://themefisher.com/products/constra-construction-template/
+DEMO: https://demo.themefisher.com/constra/
+GITHUB: https://github.com/themefisher/Constra-Bootstrap-Construction-Template
+
+WEBSITE: https://themefisher.com
+TWITTER: https://twitter.com/themefisher
+FACEBOOK: https://www.facebook.com/themefisher
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Constra - Construction Html5 Template</title>
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Construction Html5 Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name=author content="Themefisher">
+    <meta name=generator content="Themefisher Constra HTML Template v1.0">
+
+    <!-- Favicon
+  ================================================== -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- CSS
+  ================================================== -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="plugins/animate-css/animate.css">
+    <!-- slick Carousel -->
+    <link rel="stylesheet" href="plugins/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+    <!-- Colorbox -->
+    <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
+    <!-- Template styles-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="body-inner">
+
+    <!-- Header start -->
+
+    <!-- Header start 导航栏-->
+    <header id="header" class="header-one">
+
+        <!-- <button @click="hideinfo">test</button> -->
+        <div class="bg-white">
+            <div class="container">
+                <div class="logo-area d-">
+                    <div class="row align-items-center">
+                        <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                            <a class="d-block" href="index.html">
+                                <img loading="lazy" src="images/logo.png" alt="Constra">
+                            </a>
+                        </div><!-- logo end -->
+
+                        <div class="col-lg-6 header-center">
+                            <ul class="top-info-box">
+                                <li>
+                                    <div class="info-box">
+                                        <div class="info-box-content">
+                                            <p class="info-box-title"><i class="fa fa-phone mr-3"></i>电话</p>
+                                            <p class="info-box-subtitle">18131397887</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="info-box">
+                                        <div class="info-box-content">
+                                            <p class="info-box-title"><i class="fa fa-at mr-3"></i>邮箱</p>
+                                            <p class="info-box-subtitle">1004191112@email.cugb.edu.cn</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="last">
+                                    <div class="info-box last">
+                                        <div class="info-box-content">
+                                            <p class="info-box-title"><i class="fa fa-envelope mr-3"></i>邮编</p>
+                                            <p class="info-box-subtitle">100080</p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul><!-- Ul end -->
+                        </div><!-- header right end -->
+
+                        <!-- <div class="col-lg-2 offset-lg-1 header-get-a-quote">
+                          <a class="btn btn-primary" href="auth-login.html">登录</a>
+                        </div> -->
+
+                        <!--显示用户头像或者登录按钮 当用户没有登录时显示按钮，成功后显示头像等 -->
+                        <!-- 登录 -->
+                        <div class="col-lg-2 offset-lg-1 header-get-a-quote" v-if="!infoIsShow">
+                            <a class="btn btn-primary" href="login.html">登录</a>
+                        </div>
+
+                        <!-- 头像 -->
+                        <div  class="col-lg-2 offset-lg-1 btn-group" v-if="infoIsShow">
+                            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <img class="rounded-circle img-fluid" style="width: 50px; height: 50px;" src="images/author.png" alt="Header Avatar">
+                                <span class="">{{username}}</span>
+
+                            </button>
+
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="user-info.html" target="_blank"><i class="fa fa-user mr-3" style="color: #ffb600;"></i>个人中心</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" type="button" @click="logout"><i class="fa fa-door-open mr-3" style="color: #ffb600;"></i>退出</a>
+                            </div>
+                        </div> <!-- 头像/登录end -->
+
+                    </div><!-- logo area end -->
+
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </div>
+
+        <div class="site-navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div id="navbar-collapse" class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav mr-auto">
+                                    <li class="nav-item dropdown active">
+                                        <a href="index.html" class="nav-link ">首页 </a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="about.html" class="nav-link">了解网络暴力 </a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="forum.html" class="nav-link " >论坛 </a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">资源 <i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="get-help.html">马上获得帮助</a></li>
+                                            <li><a href="laws.html">法律和政策</a></li>
+                                            <li><a href="research-resources.html">研究资源</a></li>
+                                            <li><a href="media-guidelines.html">媒体指南</a></li>
+                                            <li><a href="external.html">外部资源</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">你并不孤单 <i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="how-up-do.html">看看这些up是怎么做的</a></li>
+                                            <li><a href="conversation.html">来场对话吧</a></li>
+                                            <li><a href="psychology.html">来场心理spa</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">喝点鸡汤 <i class="fa fa-angle-down"></i></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="listen-musics.html">听首歌吧</a></li>
+                                            <li><a href="story-daily.html">每天一个小故事</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item"><a class="nav-link" href="get-help.html">马上获得帮助</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <!--/ Col end -->
+                </div>
+                <!--/ Row end -->
+
+                <div class="nav-search">
+                    <span id="search"><i class="fa fa-search"></i></span>
+                </div><!-- Search end -->
+
+                <div class="search-block" style="display: none;">
+                    <label for="search-field" class="w-100 mb-0">
+                        <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
+                    </label>
+                    <span class="search-close">&times;</span>
+                </div><!-- Site search end -->
+            </div>
+            <!--/ Container end -->
+
+        </div>
+        <!--/ Navigation end -->
+    </header>
+    <!--/ Header end -->
+
+
+
+    <section id="main-container" class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="wrap col-12">
+                    <!-- 播放器主题区域 -->
+                    <div class="play_wrap" id="playerapp">
+                        <div class="search_bar">
+                            <img src="images/music/player_title.png" alt=""/>
+                            <!-- 搜索歌曲 -->
+                            <input type="text" autocomplete="off" v-model="query"
+                                   @keyup.enter="searchMusic"></input>
+                        </div>
+
+                        <div class="center_con">
+                            <!-- 搜索歌曲列表 -->
+                            <div class="song_wrapper">
+                                <ul class="song_list">
+                                    <li v-for="item in musicList">
+                                        <a href="javascript:;" @click="playMusic(item.id)"></a>
+                                        <b>{{item.name}}</b>
+                                        <span v-if="item.mvid!=0" @click="playMV(item.mvid)"><i></i></span>
+                                    </li>
+                                </ul>
+                                <img src="images/music/line.png" class="switch_btn" alt="" />
+                            </div>
+
+                            <!-- 歌曲信息容器 -->
+                            <div class="player_con" :class="{playing:isPlaying}">
+                                <img src="images/music/player_bar.png" class="player_bar" />
+
+                                <!-- 黑胶碟片 -->
+                                <img src="images/music/disc.png" class="disc autoRotate" />
+                                <img :src="musicCover" class="cover autoRotate" />
+                            </div>
+
+                            <!-- 评论容器 -->
+                            <div class="comment_wrapper">
+                                <h5 class="title">热门留言</h5>
+                                <div class="comment_list">
+                                    <dl v-for="item in hotComments">
+                                        <dt><img :src="item.user.avatarUrl" alt=""></dt>
+                                        <dd class="name">{{item.user.nickname}}</dd>
+                                        <dd class = "detail">{{item.content}}</dd>
+                                    </dl>
+                                </div>
+                                <img src="images/music/line.png" class="right.png">
+                            </div>
+                        </div>
+
+                        <!-- 播放条 -->
+                        <div class="audio_con">
+                            <audio ref="'audio" @play="play" @pause="pause" :src="musicUrl" controls autoplay loop class="myaudio"></audio>
+                        </div>
+
+                        <!-- mv播放 -->
+                        <div class="video_con" v-show="isShow" style="display: none;">
+                            <video :src="mvUrl" controls="controls"></video>
+                            <div class="mask" @click="hide"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- Content row -->
+        </div><!-- Conatiner end -->
+    </section><!-- Main container end -->
+
+    <footer id="footer" class="footer bg-overlay">
+        <div class="footer-main">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-4 col-md-6 footer-widget footer-about">
+                        <h3 class="widget-title">关于我们</h3>
+                        <img loading="lazy" width="200px" class="footer-logo" src="images/footer-logo.png" alt="Constra">
+                        <div>
+                            <p>给自己时间，不要焦急，一步一步来，一日一日过，请相信生命的韧性是惊人的，跟自己向上的心去合作，不要放弃对自己的爱护。&nbsp; &nbsp; —三毛</p>
+                            <p>
+                                不要让虚拟的恶意影响让自己对现实失望，加油！
+                            </p>
+                        </div>
+
+                        <div class="footer-social">
+                            <ul>
+                                <li><a href="https://facebook.com/themefisher" aria-label="Facebook"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/themefisher" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li><a href="https://instagram.com/themefisher" aria-label="Instagram"><i
+                                        class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://github.com/themefisher" aria-label="Github"><i class="fab fa-github"></i></a></li>
+                            </ul>
+                        </div><!-- Footer social end -->
+                    </div><!-- Col end -->
+
+                    <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+                        <h3 class="widget-title">基于B/S架构的预防网络暴力线上系统</h3>
+                        <div class="working-hours">
+                            该系统功能目前仍在扩建阶段，我们力求构建一个功能完善，生态良好，能给广大被网络暴力困扰的网友心灵慰藉的线上平台，我们的工作时间
+                            <br><br> 星期一 - 星期五: <span class="text-right">09:00 - 17:00 </span>
+                            <br> 星期六: <span class="text-right">10:00 - 16:00</span>
+                            <br> 星期日及节假日: <span class="text-right">09:00 - 12:00</span>
+                        </div>
+                    </div><!-- Col end -->
+
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+                        <h3 class="widget-title">你可以享受的主要功能：</h3>
+                        <ul class="list-arrow">
+                            <li><a href="about.html">了解网络暴力</a></li>
+                            <li><a href="forum.html">论坛</a></li>
+                            <li><a href="laws.html">获取对抗网络暴力的资源</a></li>
+                            <li><a href="how-up-do.html">获取经验以及教训</a></li>
+                            <li><a href="index.html">探索主页</a></li>
+                        </ul>
+                    </div><!-- Col end -->
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </div><!-- Footer main end -->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 offset-lg-6">
+                        <div class="copyright-info text-right">
+              <span>原前端页面模板著作权 &copy; <script>
+                  document.write(new Date().getFullYear())
+                </script>, Designed &amp; Developed by <a href="https://themefisher.com">Themefisher</a></span>
+                        </div>
+                    </div>
+
+                </div><!-- Row end -->
+
+                <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+                    <button class="btn btn-primary" title="Back to Top">
+                        <i class="fa fa-angle-double-up"></i>
+                    </button>
+                </div>
+
+            </div><!-- Container end -->
+        </div><!-- Copyright end -->
+    </footer><!-- Footer end -->
+
+
+    <!-- Javascript Files
+    ================================================== -->
+
+    <!-- initialize jQuery Library -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap jQuery -->
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <!-- Slick Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/slick/slick-animation.min.js"></script>
+    <!-- Color box -->
+    <script src="plugins/colorbox/jquery.colorbox.js"></script>
+    <!-- shuffle -->
+    <script src="plugins/shuffle/shuffle.min.js" defer></script>
+
+    <!-- Template custom -->
+    <script src="js/script.js"></script>
+
+    <!-- vue.js -->
+    <script src="js/vue.js"></script>
+
+    <!-- axios.js-->
+    <script src="plugins/axios/axios-0.18.0.js"></script>
+
+    <script src="js/vue/header.js"></script>
+    <script src="js/vue/">
+    </script>
+
+</div><!-- Body inner end -->
+</body>
+
+</html>

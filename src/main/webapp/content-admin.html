@@ -1,0 +1,416 @@
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<!-- 
+THEME: Constra - Construction Html5 Template
+VERSION: 1.0.0
+AUTHOR: Themefisher
+
+HOMEPAGE: https://themefisher.com/products/constra-construction-template/
+DEMO: https://demo.themefisher.com/constra/
+GITHUB: https://github.com/themefisher/Constra-Bootstrap-Construction-Template
+
+WEBSITE: https://themefisher.com
+TWITTER: https://twitter.com/themefisher
+FACEBOOK: https://www.facebook.com/themefisher
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <title>个人发布内容管理</title>
+
+  <!-- Mobile Specific Metas
+================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Construction Html5 Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name=author content="Themefisher">
+  <meta name=generator content="Themefisher Constra HTML Template v1.0">
+
+  <!-- Favicon
+================================================== -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- CSS
+================================================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+  <!-- Animation -->
+  <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <!-- slick Carousel -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <!-- Colorbox -->
+  <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
+
+  <!-- element-ui -->
+  <link rel="stylesheet" href="plugins/element-ui/lib/theme-chalk/index.css">
+
+  <!-- Template styles-->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div class="body-inner" id="content-admin-app">
+
+    <!-- Header start 导航栏-->
+    <header id="header" class="header-one">
+      <!-- <button @click="hideinfo">test</button> -->
+      <div class="bg-white">
+        <div class="container">
+          <div class="logo-area d-">
+            <div class="row align-items-center">
+              <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+                <a class="d-block" href="index.html">
+                  <img loading="lazy" src="images/logo.png" alt="Constra">
+                </a>
+              </div><!-- logo end -->
+
+              <div class="col-lg-6 header-center">
+                <ul class="top-info-box">
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                        <p class="info-box-title"><i class="fa fa-phone mr-3"></i>电话</p>
+                        <p class="info-box-subtitle">18131397887</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="info-box">
+                      <div class="info-box-content">
+                        <p class="info-box-title"><i class="fa fa-at mr-3"></i>邮箱</p>
+                        <p class="info-box-subtitle">1004191112@email.cugb.edu.cn</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="last">
+                    <div class="info-box last">
+                      <div class="info-box-content">
+                        <p class="info-box-title"><i class="fa fa-envelope mr-3"></i>邮编</p>
+                        <p class="info-box-subtitle">100080</p>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul><!-- Ul end -->
+              </div><!-- header right end -->
+
+              <!-- <div class="col-lg-2 offset-lg-1 header-get-a-quote">
+                <a class="btn btn-primary" href="auth-login.html">登录</a>
+              </div> -->
+
+              <!--显示用户头像或者登录按钮 当用户没有登录时显示按钮，成功后显示头像等 -->
+              <!-- 登录 -->
+              <div class="col-lg-2 offset-lg-1 header-get-a-quote" v-if="!infoIsShow">
+                <a class="btn btn-primary" href="login.html">登录</a>
+              </div>
+
+              <!-- 头像 -->
+              <div  class="col-lg-2 offset-lg-1 btn-group" v-if="infoIsShow">
+                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <img class="rounded-circle img-fluid" style="width: 50px; height: 50px;" src="images/author.png" alt="Header Avatar">
+                  <span class="">{{username}}</span>
+
+                </button>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="user-info.html"><i class="fa fa-user mr-3" style="color: #ffb600;"></i>个人中心</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" type="button"><i class="fa fa-door-open mr-3" style="color: #ffb600;"></i>退出</a>
+                </div>
+              </div> <!-- 头像/登录end -->
+
+            </div><!-- logo area end -->
+
+          </div><!-- Row end -->
+        </div><!-- Container end -->
+      </div>
+
+    </header>
+    <!--/ Header end -->
+
+
+
+<div id="main-container" class="main-container">
+  <div class="container-fluid container-creator">
+
+    <div class="row flex-xl-nowrap">
+
+        <button class="navbar-toggler btn d-md-none p-0 ml-3 collapsed" type="button"
+        data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" 
+        aria-expanded="false" aria-label="Toggle docs navigation">
+            <span class="navbar-toggler-icon text-center"><i class="fa fa-bars" style="color: white; padding-top: 5px;"></i></span>
+        </button>
+      <!-- 侧边栏 -->
+      <div class="col-md-3 col-xl-2 bd-sidebar ">
+        <div class="collapse d-md-block row" id="bd-docs-nav">
+          <nav class="bd-links" aria-label="Main navigation">
+            <div class="bd-toc-item text-center">
+              <button class="btn btn-primary create-button" @click="toggleAddPostForm">发布内容</button>
+              <div class="post-article">
+                <el-dialog title="发布内容" :close-on-click-modal="false" :visible.sync="dialogFormVisible">
+                  <el-form :model="addPostForm" :rules="articleRules" ref="addPostForm">
+                    <el-form-item label="标题" prop="title" :label-width="formLabelWidth">
+                      <el-input placeholder="请在这里输入标题" v-model="addPostForm.title" autocomplete="off" ></el-input>
+                    </el-form-item>
+                    <el-form-item label="内容" prop="content" :label-width="formLabelWidth">
+                      <el-input type="textarea" :rows="10" placeholder="输入内容" v-model="addPostForm.content" autocomplete="off" ></el-input>
+                    </el-form-item>
+
+                  </el-form>
+                  <div slot="footer" class="dialog-footer">
+                    <button class="btn btn-secondary post-article-button" @click="dialogFormVisible = false">取 消</button>
+                    <button class= "btn btn-primary post-article-button ml-2" @click="toggleEnsureAdd('addPostForm')">确 定</button>
+                  </div>
+                </el-dialog>
+              </div>
+            </div>
+
+            <!-- 个人中心 -->
+            <div class="bd-toc-item active" >
+              <a class="nav-link bd-toc-link" href="#"><i class="fa fa-user"></i>个人中心</a>
+            </div>
+
+            <!-- 内容管理 -->
+            <div class="bd-toc-item dropdown">
+              <a class="nav-link bd-toc-link" type="button" data-toggle="collapse" data-target="#menutest" href="#"
+                 type="button" @click="toggleMenu">
+                <i class="fa fa-pen"></i>内容管理
+                <span class="ml-auto"><i :class="['fa', isMenuVisible ? 'fa-angle-down' : 'fa-angle-right']"></i></span>
+
+              </a>
+
+            </div>
+            <ul class="collapse bd-sidenav list-group" id="menutest" v-if="isMenuVisible">
+              <li class="list-group-item"><a href="content-admin.html">文章管理</a></li>
+              <li class="list-group-item"><a href="comment-admin.html">评论管理</a></li>
+            </ul>
+
+
+            <div class="bd-toc-item">
+              <a class="nav-link bd-toc-link" href="support-us.html"><i class="fa fa-heart"></i>支持我们</a>
+            </div>
+
+
+          </nav>
+        </div>
+
+      </div> <!-- 侧边栏 end -->
+
+        <!-- 内容管理部分 -->
+        <main class="col-md-9 col-xl-9 py-md-3  bd-content" role="main" >
+
+
+          <nav class="navbar navbar-expand-lg navbar-light ml-0 bg-white ">
+            <a class="navbar-brand" href="#">文章管理</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              
+              <form class="form-inline my-2 my-lg-0 ml-auto">
+                <input class="form-control mr-sm-2" type="search" placeholder="查找想要查询的内容" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">搜索</button>
+              </form>
+            </div>
+          </nav>
+          
+            <div class="ml-5 mr-5 mb-5 mb-lg-0">
+              <div class="post"  v-for="item in postList" :key="item.id">
+                <div class="post-body">
+                  <div class="entry-header">
+                    <div class="row">
+                      <h2 class="entry-title">
+                        <a href="#" @click="showPost($event, item.id)">{{item.title}}</a>
+                      </h2>
+                      <div class="post-meta ml-auto">
+                
+                        <span class="post-meta-date"><i class="far fa-calendar"></i>{{item.date}} </span>
+                        <span class="post-comment"><i class="far fa-comment"></i> {{item.commentNum}}条评论</span>
+                        <span class="post-approve"><i class="far fa-heart"></i>{{item.approve}}支持</span>
+                      </div>
+                    </div>
+                   
+                  </div><!-- header end -->
+      
+                  <div class="entry-content" >              
+                      <a class="post-skech" href="#" @click="showPost($event, item.id)">{{item.content}}</a>
+                  </div>
+      
+                  <!-- 状态栏 -->
+                  
+      
+                  <div class="bd-admin-content text-md-right mt-4">
+                    <button class="btn btn-outline-secondary bd-admin-button ml-4" @click="toggleUpdatePostForm(item.id)"><i class="fa fa-pen mr-3"></i>编辑</button>
+                    <button class="btn btn-outline-secondary bd-admin-button ml-4"><i class="fa fa-share mr-3"></i>分享</button>
+                    <button class="btn btn-outline-danger bd-admin-button ml-4" @click="toggleDelete(item.id)"><i class="fa fa-trash mr-3" ></i>删除</button>
+                  </div>
+
+      
+                </div><!-- post-body end -->
+              </div><!-- 1st post end -->
+              <div class="post-article">
+                <el-dialog title="修改内容" :close-on-click-modal="false" :visible.sync="dialogUpdateFormVisible">
+                  <el-form :model="updatePostForm" :rules="articleRules" ref="updatePostForm">
+                    <el-form-item label="标题" prop="title" :label-width="formLabelWidth">
+                      <el-input placeholder="请在这里输入标题" v-model="updatePostForm.title" autocomplete="off" ></el-input>
+                    </el-form-item>
+                    <el-form-item label="内容" prop="content" :label-width="formLabelWidth">
+                      <el-input type="textarea" :rows="10" placeholder="输入内容" v-model="updatePostForm.content" autocomplete="off" ></el-input>
+                    </el-form-item>
+
+                  </el-form>
+                  <div slot="footer" class="dialog-footer">
+                    <button class="btn btn-secondary post-article-button" @click="dialogUpdateFormVisible = false">取 消</button>
+                    <button class= "btn btn-primary post-article-button ml-2" @click="toggleEnsureUpdate('updatePostForm')">确 定</button>
+                  </div>
+                </el-dialog>
+              </div>
+      
+              <!-- 分页条 -->
+              <nav class="paging" aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-left"></i></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-double-right"></i></a></li>
+                </ul>
+              </nav>
+      
+            </div><!-- Content Col end -->            
+        </main>
+        <!-- 个人信息栏 end -->
+
+    </div><!-- Main row end -->
+
+
+
+
+  </div><!-- Container end -->
+
+  
+</div><!-- Main container end -->
+
+
+    <footer id="footer" class="footer bg-overlay">
+      <div class="footer-main">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-4 col-md-6 footer-widget footer-about">
+              <h3 class="widget-title">关于我们</h3>
+              <img loading="lazy" width="200px" class="footer-logo" src="images/footer-logo.png" alt="Constra">
+              <div>
+                <p>给自己时间，不要焦急，一步一步来，一日一日过，请相信生命的韧性是惊人的，跟自己向上的心去合作，不要放弃对自己的爱护。&nbsp; &nbsp; —三毛</p>
+                <p>
+                  不要让虚拟的恶意影响让自己对现实失望，加油！
+                </p>
+              </div>
+
+              <div class="footer-social">
+                <ul>
+                  <li><a href="https://facebook.com/themefisher" aria-label="Facebook"><i
+                          class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="https://twitter.com/themefisher" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li><a href="https://instagram.com/themefisher" aria-label="Instagram"><i
+                          class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://github.com/themefisher" aria-label="Github"><i class="fab fa-github"></i></a></li>
+                </ul>
+              </div><!-- Footer social end -->
+            </div><!-- Col end -->
+
+            <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+              <h3 class="widget-title">基于B/S架构的预防网络暴力线上系统</h3>
+              <div class="working-hours">
+                该系统功能目前仍在扩建阶段，我们力求构建一个功能完善，生态良好，能给广大被网络暴力困扰的网友心灵慰藉的线上平台，我们的工作时间
+                <br><br> 星期一 - 星期五: <span class="text-right">09:00 - 17:00 </span>
+                <br> 星期六: <span class="text-right">10:00 - 16:00</span>
+                <br> 星期日及节假日: <span class="text-right">09:00 - 12:00</span>
+              </div>
+            </div><!-- Col end -->
+
+            <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+              <h3 class="widget-title">你可以享受的主要功能：</h3>
+              <ul class="list-arrow">
+                <li><a href="about.html">了解网络暴力</a></li>
+                <li><a href="forum.html">论坛</a></li>
+                <li><a href="laws.html">获取对抗网络暴力的资源</a></li>
+                <li><a href="how-up-do.html">获取经验以及教训</a></li>
+                <li><a href="index.html">探索主页</a></li>
+              </ul>
+            </div><!-- Col end -->
+          </div><!-- Row end -->
+        </div><!-- Container end -->
+      </div><!-- Footer main end -->
+
+      <div class="copyright">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 offset-lg-6">
+              <div class="copyright-info text-right">
+              <span>原前端页面模板著作权 &copy; <script>
+                  document.write(new Date().getFullYear())
+                </script>, Designed &amp; Developed by <a href="https://themefisher.com">Themefisher</a></span>
+              </div>
+            </div>
+
+          </div><!-- Row end -->
+
+          <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+            <button class="btn btn-primary" title="Back to Top">
+              <i class="fa fa-angle-double-up"></i>
+            </button>
+          </div>
+
+        </div><!-- Container end -->
+      </div><!-- Copyright end -->
+    </footer><!-- Footer end -->
+
+
+  <!-- Javascript Files
+  ================================================== -->
+
+  <!-- initialize jQuery Library -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap jQuery -->
+  <script src="plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+  <!-- Slick Carousel -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/slick/slick-animation.min.js"></script>
+  <!-- Color box -->
+  <script src="plugins/colorbox/jquery.colorbox.js"></script>
+  <!-- shuffle -->
+  <script src="plugins/shuffle/shuffle.min.js" defer></script>
+
+  <!-- Template custom -->
+  <script src="js/script.js"></script>
+
+  <!-- vue.js -->
+  <script src="js/vue.js"></script>
+  <!--  axios-->
+  <script src="plugins/axios/axios-0.18.0.js"></script>
+
+
+  <!-- element-ui -->
+  <script src="plugins/element-ui/lib/index.js"></script>
+
+
+  <script src="js/vue/contentadmin.js"></script>
+  </div><!-- Body inner end -->
+  </body>
+
+  </html>

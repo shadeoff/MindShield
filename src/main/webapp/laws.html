@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Basic Page Needs
+================================================== -->
+  <meta charset="utf-8">
+  <title>法律与政策</title>
+
+  <!-- Mobile Specific Metas
+================================================== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Construction Html5 Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name=author content="Themefisher">
+  <meta name=generator content="Themefisher Constra HTML Template v1.0">
+
+  <!-- Favicon
+================================================== -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- CSS
+================================================== -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
+  <!-- Animation -->
+  <link rel="stylesheet" href="plugins/animate-css/animate.css">
+  <!-- slick Carousel -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <!-- Colorbox -->
+  <link rel="stylesheet" href="plugins/colorbox/colorbox.css">
+  <!-- Template styles-->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="body-inner">
+      
+
+  
+  
+     
+<!-- Header start 导航栏-->
+<header id="header" class="header-one">
+
+<!-- <button @click="hideinfo">test</button> -->
+<div class="bg-white">
+  <div class="container">
+    <div class="logo-area d-">
+        <div class="row align-items-center">
+          <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+              <a class="d-block" href="index.html">
+                <img loading="lazy" src="images/logo.png" alt="Constra">
+              </a>
+          </div><!-- logo end -->
+
+          <div class="col-lg-6 header-center">
+              <ul class="top-info-box">
+                <li>
+                  <div class="info-box">
+                    <div class="info-box-content">
+                        <p class="info-box-title"><i class="fa fa-phone mr-3"></i>电话</p>
+                        <p class="info-box-subtitle">18131397887</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="info-box">
+                    <div class="info-box-content">
+                        <p class="info-box-title"><i class="fa fa-at mr-3"></i>邮箱</p>
+                        <p class="info-box-subtitle">1004191112@email.cugb.edu.cn</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="last">
+                  <div class="info-box last">
+                    <div class="info-box-content">
+                        <p class="info-box-title"><i class="fa fa-envelope mr-3"></i>邮编</p>
+                        <p class="info-box-subtitle">100080</p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul><!-- Ul end -->
+          </div><!-- header right end -->
+
+          <!-- <div class="col-lg-2 offset-lg-1 header-get-a-quote">
+            <a class="btn btn-primary" href="auth-login.html">登录</a>
+          </div> -->
+
+          <!--显示用户头像或者登录按钮 当用户没有登录时显示按钮，成功后显示头像等 -->
+          <!-- 登录 -->
+          <div class="col-lg-2 offset-lg-1 header-get-a-quote" v-if="!infoIsShow">
+            <a class="btn btn-primary" href="login.html">登录</a>
+          </div>
+
+          <!-- 头像 -->
+          <div  class="col-lg-2 offset-lg-1 btn-group" v-if="infoIsShow">
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <img class="rounded-circle img-fluid" style="width: 50px; height: 50px;" src="images/author.png" alt="Header Avatar">
+              <span class="">一个人</span>
+
+            </button>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="user-info.html"><i class="fa fa-user mr-3" style="color: #ffb600;"></i>个人中心</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#" type="button" @click="logout"><i class="fa fa-door-open mr-3" style="color: #ffb600;"></i>退出</a>
+            </div>
+          </div> <!-- 头像/登录end -->
+
+        </div><!-- logo area end -->
+
+    </div><!-- Row end -->
+  </div><!-- Container end -->
+</div>
+
+<div class="site-navigation">
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div id="navbar-collapse" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a href="index.html" class="nav-link ">首页 </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="about.html" class="nav-link">了解网络暴力 </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="forum.html" class="nav-link " >论坛 </a>
+                    </li>
+
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">资源 <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="get-help.html">马上获得帮助</a></li>
+                          <li><a href="laws.html">法律和政策</a></li>
+                          <li><a href="research-resources.html">研究资源</a></li>
+                          <li><a href="media-guidelines.html">媒体指南</a></li>
+                          <li><a href="external.html">外部资源</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">你并不孤单 <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="how-up-do.html">看看这些up是怎么做的</a></li>
+                          <li><a href="conversation.html">来场对话吧</a></li>
+                          <li><a href="psychology.html">来场心理spa</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">喝点鸡汤 <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="listen-musics.html">听首歌吧</a></li>
+                          <li><a href="story-daily.html">每天一个小故事</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link" href="get-help.html">马上获得帮助</a></li>
+                  </ul>
+              </div>
+            </nav>
+        </div>
+        <!--/ Col end -->
+      </div>
+      <!--/ Row end -->
+
+      <div class="nav-search">
+        <span id="search"><i class="fa fa-search"></i></span>
+      </div><!-- Search end -->
+
+      <div class="search-block" style="display: none;">
+        <label for="search-field" class="w-100 mb-0">
+          <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
+        </label>
+        <span class="search-close">&times;</span>
+      </div><!-- Site search end -->
+  </div>
+  <!--/ Container end -->
+
+</div>
+<!--/ Navigation end -->
+</header>
+<!--/ Header end -->
+  
+  <div class="main-area" id="lawsapp">
+
+    <div id="banner-area" class="banner-area" style="background-image:url(images/banner/resource1.png)">
+      <div class="banner-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="banner-heading">
+                <h1 class="banner-title">法律与政策</h1>
+              </div>
+            </div><!-- Col end -->
+          </div><!-- Row end -->
+        </div><!-- Container end -->
+      </div><!-- Banner text end -->
+    </div><!-- Banner area end -->
+
+    <section id="main-container" class="main-container">
+      <div class="container" id="readapp">
+        <div class="bd-nav-box">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-black">
+              <li class="breadcrumb-item"><a href="#">首页</a></li>
+              <li class="breadcrumb-item"><a href="#">资源</a></li>
+              <li class="breadcrumb-item active" aria-current="page">{{titles[activeButton]}}</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 mt-5 mt-lg-0">
+            <div class="list-group">
+              <a href="get-help.html" class="list-group-item list-group-item-action " >{{titles[0]}}</a>
+              <a href="#" class="list-group-item list-group-item-action active" >{{titles[1]}}</a>
+              <a href="research-resources.html" class="list-group-item list-group-item-action " >{{titles[2]}}</a>
+              <a href="media-guidelines.html" class="list-group-item list-group-item-action "  >{{titles[3]}}</a>
+              <a href="external.html" class="list-group-item list-group-item-action " >{{titles[4]}}</a>
+              <br>
+            </div>
+          </div><!-- Col end -->
+
+          <!-- 什么是网暴 -->
+          <div class="col-lg-8 offset-lg-1" >
+            <h1 class="column-title">中央网信办印发《关于切实加强网络暴力治理的通知》</h1>
+            <h2>关于切实加强网络暴力治理的通知</h2>
+            <p>各省、自治区、直辖市党委网信办，新疆生产建设兵团党委网信办：</p>
+            <p>网络暴力针对个人集中发布侮辱谩骂、造谣诽谤、侵犯隐私等违法信息及其他不友善信息，侵害他人合法权益，扰乱正常网络秩序。为切实加大网暴治理力度，进一步压实网站平台主体责任，健全完善长效工作机制，有效保障广大网民合法权益，维护文明健康的网络环境，现通知如下。</p>
+
+            <h3>一、建立健全网暴预警预防机制</h3>
+            <p><b>1.加强内容识别预警。</b>网站平台要建立网暴信息分类标准和典型案例样本库，在区分舆论监督和善意批评的基础上，明确细化涉网暴内容标准，增强识别预警准确性。结合网站平台业务特点和具体处置案例，不断更新分类标准，持续完善样本库。</p>
+            <p><b>2.构建网暴技术识别模型。</b>网站平台要综合考虑事件类别、针对主体、参与人数、信息内容、发布频次、环节场景、举报投诉等维度，建立符合自身特点的网暴行为识别模型，及时发现预警网暴倾向性、苗头性问题。</p>
+            <p><b>3.建立涉网暴舆情应急响应机制。</b>网站平台要组织专门工作力量，及时收集网暴相关热点话题和舆情线索，强化网暴舆情事前预警，做到防微杜渐、防患未然。根据陌生人私信显著增加、相关话题热度迅速攀升、搜索量快速增长、举报频次加大等情况，及时发现网暴异常行为。</p>
+            <br>
+
+            <h3>二、强化网暴当事人保护</h3>
+            <p><b>1.设置一键防护功能。</b>网站平台要根据自身特点，建立完善紧急防护功能，提供一键关闭陌生人私信、评论、转发和@消息等设置。用户遭遇网暴风险时，网站平台要及时发送系统信息，提示其启动一键防护，免受网暴信息骚扰侵害。</p>
+            <p><b>2.优化私信规则。</b>进一步完善私信规则，对接收陌生人私信附加数量、时间、范围等限制，用户可根据自身需要自主设置仅接收好友私信或拒绝接收所有私信。对照网暴信息分类标准，采取技术措施，防范网暴内容通过私信传输。</p>
+            <p><b>3.建立快速举报通道。</b>在网站平台评论、私信等位置设置网暴信息快捷投诉举报入口，简化投诉举报程序，网站平台对于明确为网暴信息的应在第一时间予以处置。向用户提供针对网暴信息的一键取证等功能，方便当事人快速收集证据。坚持最有利于未成年人的原则，优先处理涉未成年人网暴举报。</p>
+            <br>
+
+            <h3>三、严防网暴信息传播扩散</h3>
+            <p><b>1.加强评论环节管理。</b>网站平台要加强对涉网暴风险的新闻、帖文、话题等信息的评论环节管理，及时清理过滤涉网暴违法违规评论，严控涉网暴不友善评论泛化传播，优先展示权威信息。重点网站平台要将用户公共空间发布的评论在本人账号主页进行公开集纳展示，强化公众监督。</p>
+            <p><b>2.加强重点话题群组和版块管理。</b>及时解散网暴信息集中的话题版块，暂停新设相关话题版块。密切巡查以相关事件名称、当事人及相关人员姓名命名的词条、话题、群组、贴吧，及时清理涉网暴内容。排查关闭以匿名投稿、隔空喊话等名义发布导向不良等内容的话题版块和群组账号。</p>
+            <p><b>3.加强直播、短视频管理。</b>加强直播和短视频内容审核，及时关停网暴内容集中的直播间，封禁违规主播，对存在网暴风险的短视频先审后发，清理含有网暴信息的短视频，拦截过滤负面弹幕。密切关注网暴当事人开设的直播间，及时管控诱导逼迫自残自杀等信息。</p>
+            <p><b>4.加强权威信息披露。</b>各地网信部门要密切关注涉网暴舆情和信息动向，督促协调有关部门和地方加强权威信息发布。对于存在网暴风险的热点事件，网站平台要及时转发推送权威信息，引导网民理性发声，共同抵制网暴行为。</p>
+            <br>
+
+            <h3>四、依法从严处置处罚</h3>
+            <p><b>1.分类处置网暴相关账号。</b>一是加强账号发文前警示提醒，对发布不友善信息的账号，提示理性发言。二是对参与网暴的账号进行警示教育，并视情采取禁言、暂停私信功能等措施。三是对首发、多发、煽动发布网暴信息的账号，依法依规采取关闭账号等措施，情节特别严重的，全网禁止注册新账号。四是涉及违法犯罪的，移交相关部门依法追究法律责任。网站平台要强化曝光力度，及时对外公布热点网暴事件处置情况。</p>
+            <p><b>2.严处借网暴恶意营销炒作等行为。</b>坚决打击借网暴事件蹭炒热度、推广引流、故意带偏节奏或者跨平台搬运拼接虚假信息等恶意营销炒作的行为，进一步排查背后MCN机构，对MCN机构采取警示沟通、暂停商业收益、限制提供服务、入驻清退等连带处置措施。对于将账号名称临时修改为事件相关机构、人员的，网站平台应当加强用户真实身份核验。</p>
+            <p><b>3.问责处罚失职失责的网站平台。</b>对于网暴信息扎堆、防范机制不健全、举报受理处置不及时以及造成恶劣后果的网站平台，依法依规采取通报批评、限期整改、罚款、暂停信息更新、关闭网站等处置处罚措施，从严处理相关责任人。</p>
+            <br>
+
+            <h3>五、工作要求</h3>
+            <p><b>1.提高思想认识。</b>各地网信部门要进一步提高政治站位，充分认识开展网暴问题治理工作的重要意义，进一步细化明确任务要求和工作措施，确保治理工作取得实效。</p>
+            <p><b>2.压实工作责任。</b>指导督促网站平台压实主体责任，对照工作要求，优化各项功能设置，提升技术水平，强化问题发现处置，不断完善工作手段，切实增强网暴问题治理能力和水平。</p>
+            <p><b>3.强化长效治理。</b>各地网信部门要强化任务督导，组织对属地网站平台措施落实情况开展专项检查，督促整改落实。各地各网站平台要及时总结行之有效的经验做法，完善网暴问题治理的长效机制。</p>
+
+          </div><!-- Col end -->
+
+        </div><!-- Content row end -->
+
+      </div><!-- Container end -->
+    </section><!-- Main container end -->
+
+  </div>
+
+
+
+
+      <footer id="footer" class="footer bg-overlay">
+        <div class="footer-main">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-lg-4 col-md-6 footer-widget footer-about">
+                <h3 class="widget-title">关于我们</h3>
+                <img loading="lazy" width="200px" class="footer-logo" src="images/footer-logo.png" alt="Constra">
+                <div>
+                  <p>给自己时间，不要焦急，一步一步来，一日一日过，请相信生命的韧性是惊人的，跟自己向上的心去合作，不要放弃对自己的爱护。&nbsp; &nbsp; —三毛</p>
+                  <p>
+                    不要让虚拟的恶意影响让自己对现实失望，加油！
+                  </p>
+                </div>
+
+                <div class="footer-social">
+                  <ul>
+                    <li><a href="https://facebook.com/themefisher" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/themefisher" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="https://instagram.com/themefisher" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/themefisher" aria-label="Github"><i class="fab fa-github"></i></a></li>
+                  </ul>
+                </div><!-- Footer social end -->
+              </div><!-- Col end -->
+
+              <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+                <h3 class="widget-title">基于B/S架构的预防网络暴力线上系统</h3>
+                <div class="working-hours">
+                  该系统功能目前仍在扩建阶段，我们力求构建一个功能完善，生态良好，能给广大被网络暴力困扰的网友心灵慰藉的线上平台，我们的工作时间
+                  <br><br> 星期一 - 星期五: <span class="text-right">09:00 - 17:00 </span>
+                  <br> 星期六: <span class="text-right">10:00 - 16:00</span>
+                  <br> 星期日及节假日: <span class="text-right">09:00 - 12:00</span>
+                </div>
+              </div><!-- Col end -->
+
+              <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
+                <h3 class="widget-title">你可以享受的主要功能：</h3>
+                <ul class="list-arrow">
+                  <li><a href="about.html">了解网络暴力</a></li>
+                  <li><a href="forum.html">论坛</a></li>
+                  <li><a href="laws.html">获取对抗网络暴力的资源</a></li>
+                  <li><a href="how-up-do.html">获取经验以及教训</a></li>
+                  <li><a href="index.html">探索主页</a></li>
+                </ul>
+              </div><!-- Col end -->
+            </div><!-- Row end -->
+          </div><!-- Container end -->
+        </div><!-- Footer main end -->
+
+        <div class="copyright">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 offset-lg-6">
+                <div class="copyright-info text-right">
+              <span>原前端页面模板著作权 &copy; <script>
+                  document.write(new Date().getFullYear())
+                </script>, Designed &amp; Developed by <a href="https://themefisher.com">Themefisher</a></span>
+                </div>
+              </div>
+
+            </div><!-- Row end -->
+
+            <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+              <button class="btn btn-primary" title="Back to Top">
+                <i class="fa fa-angle-double-up"></i>
+              </button>
+            </div>
+
+          </div><!-- Container end -->
+        </div><!-- Copyright end -->
+      </footer><!-- Footer end -->
+  
+  
+    <!-- Javascript Files
+    ================================================== -->
+  
+    <!-- initialize jQuery Library -->
+    <script src="plugins/jQuery/jquery.min.js"></script>
+    <!-- Bootstrap jQuery -->
+    <script src="plugins/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <!-- Slick Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/slick/slick-animation.min.js"></script>
+    <!-- Color box -->
+    <script src="plugins/colorbox/jquery.colorbox.js"></script>
+    <!-- shuffle -->
+    <script src="plugins/shuffle/shuffle.min.js" defer></script>
+
+  
+    <!-- Template custom -->
+    <script src="js/script.js"></script>
+    <!-- vue.js -->
+    <script src="js/vue.js"></script>
+
+    <!--      axios.js-->
+    <script src="plugins/axios/axios-0.18.0.js"></script>
+    <script src="js/vue/header.js"></script>
+  
+    
+
+    <script >
+        var app=new Vue({
+        el:"#lawsapp",
+        data(){
+            return{
+                titles:["马上获得帮助","法律和政策","研究资源","媒体指南","外部资源"],
+                activeButton:1,
+            };
+            
+        },
+        methods:{
+        }
+    })
+    </script>
+        
+    </div><!-- Body inner end -->
+    </body>
+</html>
